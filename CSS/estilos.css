@@ -1,0 +1,131 @@
+/*
+    paleta colores
+    negro: #0a0a12;
+    negro-suave: #12121f;
+    azul-oscuro: #14143a;
+    azul: #3b82f6;
+    azul-claro: #60a5fa;
+    morado-oscuro: #3b0764;
+    morado: #7c3aed;
+    morado-claro: #a78bfa;
+    texto: #d9d9ec;
+*/
+
+/* ===== General ===== */
+html {
+    scroll-padding-top: 70px;
+}
+
+
+body {
+    background-color: #0a0a12;
+    color: #d9d9ec;
+}
+
+/* ===== Header ===== */
+header.navbar {
+    background: linear-gradient(90deg, #0a0a12 0%, #14143a 60%, #3b0764 100%);
+    border-bottom: 2px solid #7c3aed;
+}
+
+.logotipo {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-brand {
+    color: #a78bfa;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #60a5fa;
+}
+
+.nav-link {
+    color: #d9d9ec;
+}
+
+.nav-link:hover {
+    color: #60a5fa;
+}
+
+/* ===== Sobre mí ===== */
+#sobre-mi {
+    color: #d9d9ec;
+}
+
+#sobre-mi h1 {
+    color: #a78bfa;
+}
+
+#sobre-mi img {
+    border-color: #7c3aed !important;
+    border-radius: 80px;
+}
+
+/* ===== Proyectos ===== */
+#proyectos h1 {
+    color: #60a5fa;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #12121f;
+    border: 1px solid #14143a;
+    color: #d9d9ec;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #7c3aed;
+    box-shadow: 0 0 18px rgba(124, 58, 237, 0.45);
+}
+
+.card-title {
+    color: #a78bfa;
+}
+
+/* ===== Botones ===== */
+.btn-primary {
+    background-color: #7c3aed;
+    border-color: #7c3aed;
+    color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+    color: #fff;
+}
+
+/* ===== Contacto ===== */
+#contacto {
+    background: linear-gradient(135deg, #14143a 0%, #3b0764 100%);
+    color: #fff;
+    border-top: 2px solid #7c3aed;
+}
+
+#contacto h1 {
+    color: #60a5fa;
+}
+
+#contacto .fw-bold {
+    color: #a78bfa;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #0a0a12;
+    color: #60a5fa;
+    border-top: 2px solid #7c3aed;
+}
+
+#proyectos img{
+    height: 320px;
+
+}
+

@@ -29,8 +29,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                     <a class="nav-link" href="#acerca-de">Acerca de</a>
                     <a class="nav-link" href="#proyectos">Proyectos</a>
-                    <a class="nav-link" href="file:///D:/HTML/Portafolio/index2.html">Contacto</a>
+                   <a class="nav-link" href="index2.html">Contacto</a>
                 </div>
             </div>
         </nav>
@@ -53,6 +54,65 @@
         </div>
     </section>
 
+ 
+    <!-- Acerca de -->
+<section id="acerca-de" class="container my-5 text-center">
+    <button id="modal" type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalSobreMi">
+        Conóceme un poco más
+    </button>
+
+    <script>
+    const sonidoClick = new Audio('sounds/videoplayback.m4a');
+    sonidoClick.volume = 0.6;
+
+    document.getElementById('modal').addEventListener('click', () => {
+        sonidoClick.currentTime = 0;
+        sonidoClick.play();
+    });
+</script>
+
+    <div class="modal fade" id="modalSobreMi" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal">Un poco más sobre mí</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body text-start">
+                    <img style="height: 30rem; width: 25rem;" src="imagenes/yo.jpg" alt="Said Emiliano Sandoval Davalos" class="img-fluid rounded mb-3">
+                    <p>Mi nombre completo es Said Emiliano Sandoval Davalos, actualmente tengo 18 anios, y me gusta el helado de vainilla.</p>
+                    <p>Disfruto de jugar videojuegos, no he tenido la oportunidad de desarrollar un juego realmente, pero he tenido un breve acercamiento a ello, ya sea haciendo entornos virtuales, o creando modificaciones sencillas para ellos.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="index2.html" class="btn btn-primary">Contactarme</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<section class="container my-5">
+    <h2 style="color: orangered;" class="text-center fw-bold mb-4">video spooky AAA me asuste</h2>
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="ratio ratio-16x9">
+                <video controls preload="metadata" poster="imagenes/portada-video.jpg">
+                    <source src="video/oogaBooga.mp4" type="video/mp4">Video chistoson aaa me asuste
+                    
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+
+
 
     <!-- PROYECTOS -->
     <section id="proyectos" class="container py-5">
@@ -61,23 +121,22 @@
 
             <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
                 <div class="card">
-                    <img src="imagenes/estructura-HTML5.png" class="card-img-top" alt="Estructura basica de sitio web">
+                    <img src="imagenes/calabaza.png" class="card-img-top" alt="Figura en html">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold text-start">Estructura basica de sitio web</h5>
-                        <p class="card-text">En esta actividad aprendi los usos basicos de la estrucutra de html, clases, uso del css, etc.
-                            usaste.</p>
-                        <a href="file:///D:/HTML/04_estructura3/index.html" class="btn btn-primary">Ver proyecto</a>
+                        <h5 class="card-title fw-bold text-start">Figura en html</h5>
+                        <p class="card-text">En esta actividad realizamos un personaje o figura de nuestro agrado con lo aprendido en la estructura basica. Yo hice una calabaza de minecraft porque es el mes spooky</p>
+                       <a href="proyectos/figura/index.html" class="btn btn-primary">Ver proyecto</a>
                     </div>
                 </div>
             </article>
 
             <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
                 <div class="card">
-                    <img src="imagenes/calabaza.png" class="card-img-top" alt="Figura en html">
+                    <img src="imagenes/delight tex.png" class="card-img-top" alt="Proyecto entorno virtual">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold text-start">Figura en html</h5>
-                        <p class="card-text">En esta actividad realizamos un personaje o figura de nuestro agrado con lo aprendido en la estructura basica. Yo hice una calabaza de minecraft porque es el mes spooky</p>
-                        <a href="file:///D:/HTML/Figura%20html/index.html" class="btn btn-primary">Ver proyecto</a>
+                        <h5 class="card-title fw-bold text-start"> Proyecto entorno virtual</h5>
+                        <p class="card-text">Esto fue un entorno virtual que hice con delight tex, trato de diseniar un entorno al gusto hablando sobre metas a futuro personales. En mi caso hice un entorno estilo silent hill utilizando modelos 3d, programacion con blosques y un poco de codigo.</p>
+                        <a href="https://nova.delightex.com/shared/ylfdnk" class="btn btn-primary">Ver proyecto</a>
                     </div>
                 </div>
             </article>
@@ -101,6 +160,7 @@
     </footer>
 
     <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
